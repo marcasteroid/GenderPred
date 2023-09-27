@@ -11,6 +11,7 @@
 		A96F79A22AC406D40003BA17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F79A12AC406D40003BA17 /* ContentView.swift */; };
 		A96F79A42AC406D50003BA17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96F79A32AC406D50003BA17 /* Assets.xcassets */; };
 		A96F79A72AC406D50003BA17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96F79A62AC406D50003BA17 /* Preview Assets.xcassets */; };
+		A96F79AE2AC40F240003BA17 /* GenderByName.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A96F79AD2AC40F240003BA17 /* GenderByName.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A96F79A12AC406D40003BA17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A96F79A32AC406D50003BA17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A96F79A62AC406D50003BA17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A96F79AD2AC40F240003BA17 /* GenderByName.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderByName.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				A96F799F2AC406D40003BA17 /* GenderPredApp.swift */,
 				A96F79A12AC406D40003BA17 /* ContentView.swift */,
 				A96F79A32AC406D50003BA17 /* Assets.xcassets */,
+				A96F79AD2AC40F240003BA17 /* GenderByName.mlmodel */,
 				A96F79A52AC406D50003BA17 /* Preview Content */,
 			);
 			path = GenderPred;
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96F79A22AC406D40003BA17 /* ContentView.swift in Sources */,
+				A96F79AE2AC40F240003BA17 /* GenderByName.mlmodel in Sources */,
 				A96F79A02AC406D40003BA17 /* GenderPredApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
