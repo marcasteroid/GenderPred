@@ -12,6 +12,8 @@
 		A96F79A42AC406D50003BA17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96F79A32AC406D50003BA17 /* Assets.xcassets */; };
 		A96F79A72AC406D50003BA17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96F79A62AC406D50003BA17 /* Preview Assets.xcassets */; };
 		A96F79AE2AC40F240003BA17 /* GenderByName.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A96F79AD2AC40F240003BA17 /* GenderByName.mlmodel */; };
+		A96F79B02AC413070003BA17 /* GenderPredictorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F79AF2AC413070003BA17 /* GenderPredictorViewModel.swift */; };
+		A96F79B22AC4131A0003BA17 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F79B12AC4131A0003BA17 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A96F79A32AC406D50003BA17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A96F79A62AC406D50003BA17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A96F79AD2AC40F240003BA17 /* GenderByName.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderByName.mlmodel; sourceTree = "<group>"; };
+		A96F79AF2AC413070003BA17 /* GenderPredictorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPredictorViewModel.swift; sourceTree = "<group>"; };
+		A96F79B12AC4131A0003BA17 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				A96F799F2AC406D40003BA17 /* GenderPredApp.swift */,
 				A96F79A12AC406D40003BA17 /* ContentView.swift */,
+				A96F79AF2AC413070003BA17 /* GenderPredictorViewModel.swift */,
+				A96F79B12AC4131A0003BA17 /* Utils.swift */,
 				A96F79A32AC406D50003BA17 /* Assets.xcassets */,
 				A96F79AD2AC40F240003BA17 /* GenderByName.mlmodel */,
 				A96F79A52AC406D50003BA17 /* Preview Content */,
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96F79B22AC4131A0003BA17 /* Utils.swift in Sources */,
 				A96F79A22AC406D40003BA17 /* ContentView.swift in Sources */,
 				A96F79AE2AC40F240003BA17 /* GenderByName.mlmodel in Sources */,
+				A96F79B02AC413070003BA17 /* GenderPredictorViewModel.swift in Sources */,
 				A96F79A02AC406D40003BA17 /* GenderPredApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +290,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,9 +298,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcasteroid.GenderPred;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,8 +321,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +329,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcasteroid.GenderPred;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
